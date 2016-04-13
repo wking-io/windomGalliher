@@ -900,6 +900,7 @@ nav {
     .team__bio q {
       font: 400 21px "Oswald", "Roboto", sans-serif;
       text-align: center;
+      display: inline-block;
       color: #212121; }
     .team__bio cite {
       color: #E32D46;
