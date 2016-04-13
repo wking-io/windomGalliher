@@ -898,8 +898,9 @@ nav {
     max-width: 960px;
     margin: 40px auto 0 auto; }
     .team__bio q {
-      font: 400 28px "Oswald", "Roboto", sans-serif;
+      font: 400 21px "Oswald", "Roboto", sans-serif;
       text-align: center;
+      display: inline-block;
       color: #212121; }
     .team__bio cite {
       color: #E32D46;
