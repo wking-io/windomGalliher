@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    include ./partials/head.jade
+  body
+    include ./partials/nav.jade
+    main
+      include ./partials/hero.jade
+      .content
+        include ./partials/purpose.jade
+        include ./partials/about.jade
+        include ./partials/team.jade
+        include ./partials/newsletter.jade
+        include ./partials/links.jade
+        include ./partials/contact.jade
+        include ./partials/map.jade
+        include ./partials/footer.jade
+
+    script(src="js/jquery-2.1.1.min.js" type="text/javascript")
+    script(src="js/smoothScroll.min.js" type="text/javascript")
+    script(src="js/main.min.js" type="text/javascript")

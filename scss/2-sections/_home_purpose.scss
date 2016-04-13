@@ -1,0 +1,46 @@
+.purpose {
+  width: 100vw;
+  height: 100vh;
+  background-color: $bg-color-dark;
+  text-align: center;
+  padding: 8em 0 5em 0;
+
+  &-wrapper {
+    width: 80%;
+    max-width: 760px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__title {
+    color: $text-color-light;
+    font: bold $section-title;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+  }
+  &__quote {
+    color: $text-color-light;
+    font: $section-headline;
+    &--speaker {
+      color: $text-color-light;
+      font: 500 16px $sans-font;
+      display: block;
+      margin: 15px 0 22px 0;
+    }
+  }
+  &__content {
+    color: $text-color-light;
+    font: $body-text;
+    letter-spacing: 0.1px;
+  }
+}
+
+@media (max-width: $M) {
+
+}
+
+@media (max-width: $S) {
+
+}

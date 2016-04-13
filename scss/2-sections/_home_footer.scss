@@ -1,0 +1,112 @@
+.footer {
+  width: 100vw;
+  background-color: $bg-color-dark;
+  padding: 56px 0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+    &-title {
+      width: 25%;
+    }
+    &-address {
+      width: 25%;
+    }
+    &-miniNav {
+      width: 25%;
+    }
+    &-newsletterSignup {
+      width: 25%;
+    }
+  }
+  &__title {
+    color: $text-color-light;
+    font: 700 28px $serif-font;
+    margin: 0 0 5px 0;
+    &-copyright {
+      color: $text-color-light;
+      font: 400 14px $sans-font;
+    }
+  }
+  &__heading {
+    color: $text-color-light;
+    font: 400 18px $display-font;
+    margin: 0 0 5px 0;
+  }
+  &__content {
+    color: $text-color-light;
+    font: 400 16px $sans-font;
+    opacity: 0.65;
+    margin: 0 0 20px 0
+  }
+  &__miniNav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    & li {
+      margin: 15px 0;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    & li a {
+      font: 500 16px $sans-font;
+      text-decoration: none;
+      color: $text-color-light;
+      opacity: 0.65;
+      text-transform: uppercase;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  &__newsletter-title {
+    color: $text-color-light;
+    font: 400 18px $display-font;
+    margin: 0 0 5px 0;
+    text-align: center;
+  }
+  &__form-error {
+    padding: 16px 0;
+    background: $error-color;
+    border-radius: em(2);
+    margin: 10px 0;
+    display: none;
+    & p {
+      text-align: center;
+      color: $text-color-light;
+      font: 400 16px $sans-font;
+      margin: 0;
+    }
+  }
+  &__form-email {
+    @include appearance(none);
+    width: 100%;
+    padding: 12px 0 12px 12px;
+    font: 16px $sans-font;
+    border: none;
+    margin: 10px 0;
+    border-radius: em(2);
+    outline: none;
+  }
+}
+
+input[type=submit] {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px 0 12px 0;
+  background: $primary-color;
+  font: 500 16px $sans-font;
+  color: $text-color-light;
+  text-align: center;
+  border: none;
+  border-radius: em(2);
+  outline: none;
+  &:hover {
+    background: $primary-dark;
+  }
+}

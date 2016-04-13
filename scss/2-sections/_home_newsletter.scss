@@ -1,0 +1,65 @@
+.newsletter {
+  width: 100vw;
+  height: auto;
+  background: $bg-color-dark;
+  margin: 0;
+  padding: 8em 0 3em 0;
+
+  &__title {
+    color: $text-color-light;
+    font: $section-headline;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 45px 0;
+    z-index: 2;
+  }
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+  &__item {
+    text-align: center;
+    width: 33%;
+    padding: 36px 48px;
+    text-decoration: none;
+    &:hover {
+      background: rgba($bg-color, 0.1);
+    }
+    &--issue {
+      color: $text-color-light;
+      font: 16px $display-font;
+      margin-top: 0;
+    }
+    &--divider {
+      background-color: $primary-color;
+      height: 3px;
+      width: 42px;
+      border: none;
+    }
+    &--title {
+      color: $text-color-light;
+      font: 700 23px $serif-font;
+    }
+    &--date {
+      color: $text-color-light;
+      font: 500 14px $sans-font;
+      margin-bottom: 0;
+    }
+  }
+  &__view-more {
+    display: block;
+    color: $text-color-light;
+    font: 500 20px $serif-font;
+    text-align: center;
+    text-decoration: none;
+    margin: 2em 0;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}

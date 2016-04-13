@@ -1,0 +1,203 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 80px;
+  background: transparent;
+  z-index: 9999;
+  transition: all .5s ease-out;
+  //@include shadow(1);
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+  margin: 0;
+
+  &__title {
+    flex-grow: 1;
+    margin: 0;
+    @include font-smoothing;
+    font-family: $serif-font;
+    font-weight: 700;
+    font-size: em(24);
+    transition: all .5s ease-out;
+
+    & a {
+      text-decoration: none;
+      color: $text-color-light;
+    }
+  }
+  &__links {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    height: 80px;
+  }
+  &__links li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 1em;
+    margin: 0;
+    @include font-smoothing;
+    font-family: $display-font;
+    font-size: 20px;
+    font-weight: 400;
+    transition: all .2s ease-out;
+    height: 80px;
+
+    &:last-child {
+      padding: 0 -1em 0 1em;
+      margin-right: -1em;
+    }
+  }
+  &__links li a {
+    margin: 0;
+    color: $text-color-light;
+    text-decoration: none;
+    transition: all .5s ease-out;
+    height: 100%;
+    position: relative;
+    top: 40%;
+  }
+  &__links--mobile {
+    background: rgba($text-color-light, 0.8);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 9998;
+    transition: .25s ease-out;
+    opacity: 0;
+    pointer-events: none;
+
+    & ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    & ul li {
+      list-style-type: none;
+      margin: 0;
+      @include font-smoothing;
+      display: inline;
+      font-family: $display-font;
+      font-weight: 700;
+      letter-spacing: .75px;
+      font-size: em(30);
+      text-align: center;
+    }
+    & ul li a {
+      margin: 0;
+      padding: 5rem 0;
+      display: block;
+      color: $text-color-dark;
+      text-decoration: none;
+      transition: all .5s ease-out;
+      height: 100%;
+
+      &:active {
+        background: transparent;
+        color: #3570AA;
+      }
+    }
+  }
+  &__icon-click {
+    width: 40px;
+    height: 30px;
+    display: none;
+  }
+  &__icon {
+    width: 20px;
+    height: 15px;
+    position: relative;
+    margin: auto;
+    top: 8px;
+    transition: .5s ease-out;
+    cursor: pointer;
+    display: none;
+    & span {
+      display: block;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background: $accent-color;
+      border-radius: 5px;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: .25s ease-out;
+
+      &:nth-child(1) {
+        top: 0;
+      }
+      &:nth-child(2), &:nth-child(3) {
+        top: 6px;
+      }
+      &:nth-child(4) {
+        top: 12px;
+      }
+    }
+    &.open span:nth-child(1) {
+      top: 18px;
+      width: 0%;
+      left: 50%;
+    }
+    &.open span:nth-child(2) {
+      transform: rotate(45deg);
+    }
+    &.open span:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+    &.open span:nth-child(4) {
+      top: 18px;
+      width: 0%;
+      left: 50%;
+    }
+  }
+}
+
+.menu-open {
+  opacity: 1 !important;
+  pointer-events: auto;
+}
+
+@media (max-width: $M) {
+  .nav {
+    &__links {
+      display: none;
+    }
+    &__icon {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: $S) {
+  nav {
+    height: 50px;
+  }
+  .nav {
+    &__title {
+      font-size: em(22);
+    }
+    &__links--mobile {
+      & ul li {
+        font-size: em(24);
+      }
+      & ul li a {
+        padding: .75em 0;
+      }
+    }
+  }
+}

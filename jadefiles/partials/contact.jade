@@ -1,0 +1,12 @@
+section.contact#contact
+  h2.contact__title CONTACT US
+
+  form.contact__form(role="form" method="post" action="http://formspree.io/alison.ingram926@gmail.com")
+    .contact__error
+      p Please enter a valid email address
+    input.contact__name(type="text" name="name" id="name" placeholder= "Name" required)
+    input.contact__form-title(type="text" name="title" id="title" placeholder= "Title" required)
+    input.contact__email(type="text" name="email" id="email" onBlur="validateEmail(value)" placeholder= "Email Address" required)
+    input.contact__phone(type="text" name="phone" id="phone" placeholder= "Phone Number" required)
+    textarea.contact__message(type="text" name="textarea" id="textarea" placeholder= "Message" required)
+    input.contact__submit(type="submit" value="SUBMIT YOUR MESSAGE")

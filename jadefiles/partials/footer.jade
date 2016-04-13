@@ -1,0 +1,27 @@
+section.footer
+  .footer__wrapper
+    .footer__wrapper-title
+      h2.footer__title Windom, Galliher<br> and Associates
+      p.footer__title-copyright © www.windomgalliher.com - All Rights Reserved
+    .footer__wrapper-address
+      h3.footer__heading OFFICE ADDRESS:
+      p.footer__content 770 Washington Avenue Suite 500 <br /> Montgomery, Alabama 36104
+      h3.footer__heading MAILING ADDRESS:
+      p.footer__content Post Office Box 1949 <br /> Montgomery, Alabama 36104
+      h3.footer__heading CONTACT US:
+      p.footer__content Phone: 334-241-0078 <br /> Fax: 334-241-0078
+    .footer__wrapper-miniNav
+      ul.footer__miniNav
+        li#border-purpose: a#nav-purpose.smoothScroll(href="#purpose") Purpose
+        li#border-about: a#nav-about.smoothScroll(href="#about") About
+        li#border-team: a#nav-team.smoothScroll(href="#team") Team
+        li#border-newsletter: a#nav-newsletter.smoothScroll(href="#newsletter") Newsletter
+        li#border-links: a#nav-links.smoothScroll(href="#links") Links
+        li#border-contact: a#nav-contact.smoothScroll(href="#contact") Contact
+    .footer__wrapper-newsletterSignup
+      h3.footer__newsletter-title SIGN UP FOR OUR NEWSLETTER
+      form.footer__newsletter-form(role="form" method="post" action="")
+        .footer__form-error
+          p Please enter a valid email address
+        input.footer__form-email(type="text" name="email" id="email" onBlur="validateEmail(value)" placeholder="Email Address" required)
+        input(type="submit" value="SIGN UP NOW")

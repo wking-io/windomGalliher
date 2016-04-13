@@ -1,0 +1,44 @@
+.links {
+  width: 100vw;
+  margin: 0;
+  padding: 8em 0 3em 0;
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+  &__title {
+    text-align: center;
+    color: $text-color-dark;
+    font: $section-headline;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 45px 0;
+    z-index: 2;
+  }
+  &__link {
+    width: 25%;
+    padding: 36px 0;
+    transition: all .2s ease-out;
+    text-decoration: none;
+    &:hover {
+      box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22), 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    }
+    &--image {
+      width: 40%;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &--name {
+      text-align: center;
+      font: 700 18px $serif-font;
+      margin-bottom: 0;
+      color: $text-color-dark;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+*, *::after, *::before {
+	@include box-sizing(border-box);
+}
+
+:root {
+  font-size: 62.5%;
+}
+ body {
+   font-size: 1.6rem;
+ }
+h1,h2,h3,h4,h5,h6,p,span,div {
+  @include font-smoothing;
+}
+
+.content {
+  z-index: 999;
+  background: white;
+  position: relative;
+  top: 100vh;
+
+  &-wrapper {
+    width: 80%;
+    max-width: 1150;
+    margin: 0 auto; 
+  }
+}

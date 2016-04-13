@@ -1,0 +1,69 @@
+.contact {
+  width: 100vw;
+  height: auto;
+  background: $bg-color;
+  background-size: cover;
+  margin: 0;
+  padding: 8em 0 6em 0;
+
+  &__title {
+    color: $text-color-dark;
+    font: $section-headline;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+  }
+  &__form {
+    width: 90%;
+    max-width: $M;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    z-index: 999;
+  }
+  &__error {
+    width: 100%;
+    background: $error-color;
+    padding: 18px;
+    border-radius: em(2);
+    margin: 10px 0;
+    display: none;
+
+    & p {
+      color: $text-color-light;
+      font: 500 16px $sans-font;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  input, textarea {
+    @include appearance(none);
+    width: 48%;
+    padding: 18px;
+    box-shadow: none;
+    border-radius: em(2);
+    margin: 10px 0;
+    border: none;
+    z-index: 999;
+  }
+  textarea {
+    width: 100%;
+    min-height: 100px;
+  }
+  input[type=submit] {
+    width: 100%;
+    background: transparent;
+    border: 2px solid $bg-color-dark;
+    font: 500 16px $sans-font;
+    color: $text-color-dark;
+    transition: all .5s ease-out;
+    z-index: 999;
+    &:hover {
+      background: $bg-color-dark;
+      color: $text-color-light;
+    }
+  }
+}
