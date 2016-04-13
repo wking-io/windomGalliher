@@ -62,8 +62,9 @@
     margin: 40px auto 0 auto;
 
     & q {
-      font: 400 28px $display-font;
+      font: 400 21px $display-font;
       text-align: center;
+      display: inline-block;
       color: $text-color-dark;
     }
     & cite {
