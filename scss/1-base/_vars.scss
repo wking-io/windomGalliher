@@ -1,17 +1,17 @@
 // fonts
 
 $sans-font: 'Roboto', sans-serif;
-$serif-font: 'Playfair Display', serif;
-$display-font: 'Oswald', $sans-font;
-$section-headline: 400 40px/1.3 $display-font;
-$section-title: 15px $serif-font;
-$body-text: 15px/1.4 $sans-font;
+$serif-font: 'Roboto Slab', serif;
+$display: 'Oswald', $sans-font;
+$section-headline: 400 40px/1.3 $display;
+$section-title: 18px $serif-font;
+$body-text: 16px/1.4 $sans-font;
 
 // colors
 
 $primary-color: #E32D46;
 $primary-dark: #C2273C;
-$accent-color: #212121;
+$accent-color: #1E242B;
 $text-color-dark: $accent-color;
 $text-color-light: #fff;
 $bg-color: #F2F2F2;

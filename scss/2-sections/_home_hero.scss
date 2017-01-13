@@ -1,7 +1,7 @@
 .hero {
   width: 100vw;
   height: 100vh;
-  background: url(../assets/img/bg.jpg);
+  background: url(../assets/img/hero.jpg);
   background-size: cover;
   background-position: center;
   position: fixed;
@@ -10,7 +10,7 @@
 
   &:after { /* add the transparent pattern overlay */
 
-    background: url(http://s14.directupload.net/images/111129/44ga9qid.png) center repeat;
+    background: linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0, 0.3)), url(http://s14.directupload.net/images/111129/44ga9qid.png) center repeat;
     content: "";
     position: absolute;
     bottom: 0;
@@ -33,17 +33,17 @@
   }
   &__title {
     font-family: $serif-font;
-    font-size: em(24);
-    font-weight: 700;
+    font-size: 1.75em;
+    font-weight: normal;
     text-align: center;
     color: $text-color-light;
     margin: 0;
   }
   &__content {
-    font-family: $display-font;
+    font-family: $display;
     font-weight: 400;
     text-align: center;
-    font-size: em(64);
+    font-size: 3em;
     color: #fff;
     margin: 20px 0 30px 0;
 
@@ -114,18 +114,52 @@
 
 @media (-webkit-device-pixel-ratio: 2), (min-resolution: 120dpi) {
   .hero {
-    background: linear-gradient(rgba($primary-dark, 0.3), rgba($primary-dark, 0.3)), url(/assets/img/alison_cropped.jpg);
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(30,36,43, 0.3), rgba(30,36,43, 0.5)), url(../assets/img/hero@2x.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+
+    &:after { /* add the transparent pattern overlay */
+
+      background: url(http://s14.directupload.net/images/111129/44ga9qid.png) center repeat;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      opacity: 0.3;
+      z-index: 1;
+    }
   }
 }
 @media (max-width: $S) {
   .hero {
-    background: linear-gradient(rgba($primary-dark, 0.3), rgba($primary-dark, 0.3)), url(/assets/img/alison_cropped@0.5x.jpg);
+    width: 100vw;
+    height: 100vh;
+    background: url(../assets/img/hero@0,5x.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+
+    &:after { /* add the transparent pattern overlay */
+
+      background: url(http://s14.directupload.net/images/111129/44ga9qid.png) center repeat;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      opacity: 0.1;
+      z-index: 1;
+    }
     &__wrapper {
 
       &--content {

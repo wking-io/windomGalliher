@@ -62,7 +62,7 @@
     margin: 40px auto 0 auto;
 
     & q {
-      font: 400 21px $display-font;
+      font: 400 21px $display;
       text-align: center;
       display: inline-block;
       color: $text-color-dark;
@@ -80,6 +80,32 @@
       letter-spacing: 0.1px;
     }
   }
+  &__member--mobile {
+    display: none;
+    width: 30%;
+  }
+  &__member-image--mobile {
+    width: 100%;
+  }
+  &__member__info--mobile {
+    display: none;
+    width: 70%;
+  }
+  &__member-name--mobile {
+    font: 700 20px $serif-font;
+    color: $text-color-dark;
+    text-align: center;
+    margin: 15px 0 0 0;
+    padding: 0;
+  }
+  &__member-title--mobile {
+    font: 500 14px $sans-font;
+    color: $primary-color;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 5px 0 0 0;
+    padding: 0;
+  }
 }
 
 .active {
@@ -90,10 +116,153 @@
 .active-quote {
   display: block;
 }
-@media (max-width: $M) {
 
+@media (max-width: 1024px) {
+  .team {
+    width: 100vw;
+    height: auto;
+    background: #fff;
+    margin: 0;
+    padding: 6em 0 4em 0;
+
+    &__title {
+      color: $text-color-dark;
+      font: $section-headline;
+      text-align: center;
+      margin: 0;
+      padding: 1em 0 0 0;
+      z-index: 2;
+    }
+    &__subtitle {
+      text-align: center;
+      font: 400 14px $sans-font;
+      margin: 8px 0 0 0;
+      padding: 0;
+    }
+    &__wrapper {
+      width: 90%;
+      max-width: 1050px;
+      margin: 40px auto 0 auto;
+      display: flex;
+      justify-content: center;
+    }
+    &__member {
+      width: 20%;
+      overflow: hidden;
+      transition: all .5s ease-out;
+      &-image {
+        height: 360px;
+        margin-left: 0;
+        filter: grayscale(100%);
+        &:hover {
+          filter: grayscale(0%);
+        }
+      }
+      &-name {
+        font: 700 20px $serif-font;
+        color: $text-color-dark;
+        text-align: center;
+        margin: 15px 0 0 0;
+        padding: 0;
+      }
+      &-title {
+        font: 500 14px $sans-font;
+        color: $text-color-dark;
+        opacity: 0.4;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 5px 0 0 0;
+        padding: 0;
+      }
+    }
+    &__bio {
+      display: none;
+      width: 80%;
+      max-width: 960px;
+      margin: 40px auto 0 auto;
+      overflow: auto;
+
+      & q {
+        font: 400 21px $display;
+        text-align: center;
+        display: inline-block;
+        color: $text-color-dark;
+      }
+      & cite {
+        color: $primary-color;
+        font: 500 16px $sans-font;
+        display: block;
+        text-align: center;
+        margin: 15px 0 22px 0;
+      }
+      &-content {
+        color: $text-color-dark;
+        font: $body-text;
+        letter-spacing: 0.1px;
+      }
+    }
+    &__member--mobile {
+      display: block;
+    }
+  }
+
+  .active {
+    filter: none;
+    color: $primary-color;
+    opacity: 1;
+  }
+  .active-quote {
+    display: block;
+  }
+}
+
+@media (max-width: 1024px) {
+  .team {
+    &__wrapper {
+      display: none;
+    }
+    &__bio {
+      display: flex;
+
+      &-content__wrapper {
+        width: 70%;
+        padding-left: 16px;
+      }
+      &-content:first-child {
+        margin-top: 0;
+      }
+    }
+    &__member--mobile {
+      display: block;
+      width: 30%;
+    }
+    &__member-image--mobile {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: $M) {
+  .team {
+    &__bio {
+      display: flex;
+      flex-direction: column;
+    }
+    &__member--mobile {
+      width: 70%;
+      margin: 0 auto;
+    }
+    &__bio-content__wrapper {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
 }
 
 @media (max-width: $S) {
-
+  .team {
+    &__member--mobile {
+      width: 100%;
+    }
+  }
 }

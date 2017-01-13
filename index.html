@@ -23,13 +23,17 @@
     <!-- meta(property="twitter:card" content="Image")-->
     <!-- meta(property="og:description" content="Resume website for Alison Ingram, a soon to be graduate of Auburn University's Elementary Education program.")-->
     <!-- meta(property="og:image" content="www.alisoningram.co/assets/images/alison_cropped@0.5x.jpg")-->
-    <link rel="stylesheet" href="css/main.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto|Roboto+Slab:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
     <title>Windom, Galliher and Associates</title>
   </head>
   <body>
     <nav id="nav-bar">
       <div class="nav">
-        <h1 id="nav-type" class="nav__title"> <a href="http://golden-rule.github.io/windomGalliher/" class="nav__title-text smoothScroll">Windom, Galliher and Associates</a></h1>
+        <!--h1.nav__title#nav-type 
+        //a.nav__title-text.smoothScroll(href="http://golden-rule.github.io/windomGalliher/") Windom, Galliher and Associates
+        
+        -->
         <ul class="nav__links">
           <li id="border-purpose"><a id="nav-purpose" href="#purpose" class="smoothScroll">Purpose</a></li>
           <li id="border-about"><a id="nav-about" href="#about" class="smoothScroll">About</a></li>
@@ -57,7 +61,7 @@
       <section id="hero" class="hero">
         <div class="hero__wrapper">
           <h1 class="hero__title">Windom, Galliher and Associates</h1>
-          <p class="hero__content">We have learned there are few, if any, shortcuts on the road to success. </p>
+          <p class="hero__content">We have learned there are few, if any, <br> shortcuts on the road to success. </p>
           <div class="button-wrapper">
             <div class="button-wrapper--centered"><a href="#purpose" class="hero__cta--ghost smoothScroll">OUR PURPOSE</a><a href="#contact" class="hero__cta smoothScroll">CONTACT US</a></div>
           </div>
@@ -75,7 +79,7 @@
         </section>
         <section id="about" class="about">
           <div class="about-wrapper">
-            <div class="about__img-wrapper"><img src="assets/img/about-bg.png" class="about__img"></div>
+            <div class="about__img-wrapper"><img src="assets/img/about.jpg" class="about__img"></div>
             <div class="about__content">
               <h2 class="about__content--title">ABOUT US</h2>
               <h3 class="about__content--headline">Experience matters. <br /> Relevant experience matters more.</h3>
@@ -89,11 +93,11 @@
           <div class="team__wrapper">
             <div class="team__member"><img id="steve" src="assets/img/team-steveWindom.jpg" class="team__member-image active">
               <p class="team__member-name">Steve Windom</p>
-              <p id="steve" class="team__member-title active">Founder & Principle</p>
+              <p id="steve" class="team__member-title active">Founder & Principal</p>
             </div>
             <div class="team__member"><img id="blaine" src="assets/img/team-blaineGalliher.jpg" class="team__member-image">
-              <p class="team__member-name">Blain Galliher</p>
-              <p id="blaine" class="team__member-title">Principle</p>
+              <p class="team__member-name">Blaine Galliher</p>
+              <p id="blaine" class="team__member-title">Principal</p>
             </div>
             <div class="team__member"><img id="ragan" src="assets/img/team-raganIngram.jpg" class="team__member-image">
               <p class="team__member-name">Ragan Ingram</p>
@@ -109,38 +113,62 @@
             </div>
           </div>
           <div id="steveBio" class="team__bio active-quote">
-            <q>In my favorite poem 'Youth' by Samuel Ullman, There is this incredible thought Nobody grows old by merely by living a number of years. We grow old by deserting our ideals.</q>
-            <cite>STEVE WINDOM</cite>
-            <p class="team__bio-content">Steve Windom was Alabama’s first Republican Lieutenant Governor since Reconstruction, winning election when the candidate at the top of his ticket was losing by 16 points. This was after nine years in the Senate – primarily in the 1990s – where he guided legislation to reform the state’s consumer finance code and served as the point person on tort reform issues.</p>
-            <p class="team__bio-content">As Lieutenant Governor, he finished the job on tort reform and championed a law that would provide reconstructive surgeries for women with breast cancer on Medicaid. Upon leaving office, he formed his own lobbying operation, Steve Windom, LLC, which now operates as Windom, Galliher and Associates.</p>
-            <p class="team__bio-content">The facts are impressive enough, but the things below the first layer are what make him Steve Windom. Ultimately, Steve is a grinder. For him, there’s always one more legislator’s office to stop by, one more phone call to make, just one more stone to turn over. If Steve leaves the State House before the legislative work is done for the day, then clearly a stretcher must have been involved. The reality is that he’s never left before adjournment because he knows while strategy is imperative, tactical opportunities to gain an advantage for your client only reveals themselves when you are on the scene until the final horn.</p>
-            <p class="team__bio-content">Steve, who holds undergraduate and law degrees from the University of Alabama, is married to Judge Mary Becker Windom, the presiding judge of the Alabama Court of Criminal Appeals. He is the father to two sons, Robert and Thomas &#40;both attorneys like their father – one in California, one in DC&#41;, but more importantly he is grandfather to Lily, Tyler, Claire and Colleen. He loves his dogs, vintage automobiles and boats with the same passion he has in working for his clients.</p>
+            <div class="team__member--mobile"><img src="assets/img/team-steveWindom.jpg" class="team__member-image--mobile">
+              <p class="team__member-name--mobile">Steve Windom</p>
+              <p class="team__member-title--mobile">Founder & Principal</p>
+            </div>
+            <div class="team__bio-content__wrapper">
+              <p class="team__bio-content">Steve Windom was Alabama’s first Republican Lieutenant Governor since Reconstruction, winning election when the candidate at the top of his ticket was losing by 16 points. This was after nine years in the Senate – primarily in the 1990s – where he guided legislation to reform the state’s consumer finance code and served as the point person on tort reform issues.</p>
+              <p class="team__bio-content">As Lieutenant Governor, he finished the job on tort reform and championed a law that would provide reconstructive surgeries for women with breast cancer on Medicaid. Upon leaving office, he formed his own lobbying operation, Steve Windom, LLC, which now operates as Windom, Galliher and Associates.</p>
+              <p class="team__bio-content">The facts are impressive enough, but the things below the first layer are what make him Steve Windom. Ultimately, Steve is a grinder. For him, there’s always one more legislator’s office to stop by, one more phone call to make, just one more stone to turn over. If Steve leaves the State House before the legislative work is done for the day, then clearly a stretcher must have been involved. The reality is that he’s never left before adjournment because he knows while strategy is imperative, tactical opportunities to gain an advantage for your client only reveal themselves when you are on the scene until the final horn.</p>
+              <p class="team__bio-content">Steve, who holds undergraduate and law degrees from the University of Alabama, is married to Judge Mary Becker Windom, the presiding judge of the Alabama Court of Criminal Appeals. He is the father to two sons, Robert and Thomas &#40;both attorneys like their father – one in California, one in DC&#41;, but more importantly he is grandfather to Lily, Tyler, Claire and Colleen. He loves his dogs, vintage automobiles and boats with the same passion he has in working for his clients.</p>
+            </div>
           </div>
           <div id="blaineBio" class="team__bio">
-            <q>Something I've come to appreciate is what H. Jackson Brown Wrote: &#39;You make dust or eat dust.&#39; </q>
-            <cite>BLAINE GALLIHER</cite>
-            <p class="team__bio-content">A lot of Blaine Galliher’s professional life has been guiding products and projects from Point A to Point B, learning along the way that while a straight line might be the shortest distance it isn’t always the usual path.</p>
-            <p class="team__bio-content">After 18 years in the House of Representatives including a stint as chair of the powerful Rules Committee, Blaine left the legislative sector in 2012 to serve as the Legislative Director for Gov. Robert Bentley. His role, not surprisingly, grew into more. He became one of the Governor’s most trusted voices, serving as Senior Advisor and the solid set of shoulders people looked to in times of crisis.</p>
-            <p class="team__bio-content">Blaine, a manufacturing technology graduate of Jacksonville State University, served in an intelligence unit in the U.S. Army in Central America. He was born in Abingdon, Va., but moved to Gadsden upon his honorable discharge from the Army. He worked for various manufacturers in Gadsden, ultimate rising through the ranks at Gulf States Steel. It was there that his skills to manage projects were honed. Along the way, he got ahead of the curve in understanding that technology would be critical to Alabama jobs in the future, leading to his work with the Alabama Technology Network. Gov. Bentley realized that, too, appointing Blaine to the Workforce Development Council.</p>
-            <p class="team__bio-content">Even so, Blaine is more than just an accomplished public servant. He’s a pretty good guitar picker, and spent a great deal of time in Togo, Africa, helping the Water for the Children Foundation. He is the father of two sons, Charlie and Terry, and has five grandchildren.</p>
+            <div class="team__member--mobile"><img src="assets/img/team-blaineGalliher.jpg" class="team__member-image--mobile">
+              <p class="team__member-name--mobile">Blaine Galliher</p>
+              <p class="team__member-title--mobile">Principal</p>
+            </div>
+            <div class="team__bio-content__wrapper">
+              <p class="team__bio-content">A lot of Blaine Galliher’s professional life has been guiding products and projects from Point A to Point B. He’s learned along the way that while a straight line might be the shortest distance between the two points, it isn’t always the usual path.</p>
+              <p class="team__bio-content">After 18 years in the House of Representatives, including a stint as chair of the powerful Rules Committee, Blaine left the legislative sector in 2012 to serve as the Legislative Director for Gov. Robert Bentley. His role, not surprisingly, grew into more. He became one of the Governor’s most trusted voices, serving as Senior Advisor and the solid set of shoulders people looked to in times of crisis.</p>
+              <p class="team__bio-content">Blaine, a manufacturing technology graduate of Jacksonville State University, served in an intelligence unit in the U.S. Army in Central America. He was born in Abingdon, Va., but moved to Gadsden upon his honorable discharge from the Army. He worked for various manufacturers in Gadsden, ultimate rising through the ranks at Gulf States Steel. It was there that his skills to manage projects were honed. Along the way, he got ahead of the curve in understanding that technology would be critical to Alabama jobs in the future, leading to his work with the Alabama Technology Network. Gov. Bentley realized that, too, appointing Blaine to the Workforce Development Council.</p>
+              <p class="team__bio-content">Even so, Blaine is more than just an accomplished public servant. He’s a pretty good guitar picker. He’s spent a great deal of time in Togo, Africa, helping the Water for the Children Foundation. He is the father of two sons, Charlie and Terry, and has five grandchildren.</p>
+            </div>
           </div>
           <div id="raganBio" class="team__bio">
-            <q>In 50-plus years of life, I’ve learned the most two impactful phrases in our language are ‘Please’ and ‘Thank you.‘ </q>
-            <cite>RAGAN INGRAM</cite>
-            <p class="team__bio-content">Ragan Ingram grew up in Montgomery at the feet one of Alabama’s political journalism legends, the late Bob Ingram. Bedtime stories growing up were about Folsom, Wallace, elections and legislative shenanigans. He followed in his father’s footsteps for a 14-year career at the Montgomery Advertiser – most of the time spent in his first love, which was sports writing.</p>
-            <p class="team__bio-content">In 1997, he left the newspaper world for public relations – specializing in the interplay between politics and media. A year later, Steve Windom asked him to come on board on his campaign team. Ragan served as communications director during Steve’s term. Following that, he served as assistant commissioner and chief of staff at who managed Steve's successful campaign for Lieutenant Governor, Alabama Department of Insurance.</p>
-            <p class="team__bio-content">While at ALDOI, he helped guide the state’s insurance department’s responses to Hurricanes Ivan and Katrina, the rash of church arsons in 2006, as well as the tragic tornado event in April 2011. He rejoined Steve in January 2013 in a familiar role as sounding board and the official asker of “what if” questions as they war game for clients.</p>
-            <p class="team__bio-content">Ragan, a graduate of Auburn University Montgomery, is married to Karen McDaniel Ingram, a school psychologist. They have two children, Bo &#40;a recently married software engineer in suburban Denver&#41; and Ali &#40;a student at Auburn&#41;. He has served as Chairman of the Board of Saint James School, where he and his children graduated. He also was a high school football official for six years, and considers himself well qualified to critique the officials at any football game he attends or watches on TV. He likes to tinker in the kitchen, and is a Monday morning quarterback for Auburn football.</p>
+            <div class="team__member--mobile"><img src="assets/img/team-raganIngram.jpg" class="team__member-image--mobile">
+              <p class="team__member-name--mobile">Ragan Ingram</p>
+              <p class="team__member-title--mobile">Associate</p>
+            </div>
+            <div class="team__bio-content__wrapper">
+              <p class="team__bio-content">Ragan Ingram grew up in Montgomery at the feet one of Alabama’s political journalism legends, the late Bob Ingram. Bedtime stories growing up were about Folsom, Wallace, elections and legislative shenanigans. He followed in his father’s footsteps for a 14-year career at the Montgomery Advertiser – most of the time spent in his first love, which was sports writing.</p>
+              <p class="team__bio-content">In 1997, he left the newspaper world for public relations &mdash; specializing in the interplay between politics and media. A year later, Steve Windom asked him to come on board on his campaign team, ultimately serving as campaign manager. He served as communications director during Steve’s term as Lieutenant Governor. Following that, he was Assistant Commissioner and Chief of Staff at the Alabama Department of Insurance.</p>
+              <p class="team__bio-content">While at ALDOI, he helped guide the state’s insurance department’s responses to Hurricanes Ivan and Katrina, the rash of church arsons in 2006, as well as the tragic tornado event in April 2011. He rejoined Steve in January 2013 in a familiar role as sounding board and the official asker of “what if” questions as they war game for clients.</p>
+              <p class="team__bio-content">Ragan, a graduate of Auburn University Montgomery, is married to Karen McDaniel Ingram, a school psychologist. They have two children, Bo &#40;a software engineer in Denver&#41; and Ali &#40;a school teacher in Montgomery&#41;. He has served as Chairman of the Board of Saint James School, where he and his children graduated. He also was a high school football official for six years, and considers himself well qualified to critique the officials at any football game he attends or watches on TV. He likes to tinker in the kitchen, and is a Monday morning quarterback for Auburn football.</p>
+            </div>
           </div>
           <div id="andreBio" class="team__bio">
-            <p class="team__bio-content">After a 27-year career in law enforcement, Andre Reid has spent the last 11 years helping clients navigate the legislative and regulatory processes. Andre was one of the first African-America troopers in the state, and gained the trust of decision makers with his services as an investigator, executive security officer and legislative liaison for the Department of Public Safety.</p>
-            <p class="team__bio-content">A graduate of McGill-Toole High School who also attended Bishop State College, Andre served in the U.S. Air Force and Air Force Reserves following his education. His work as an undercover agent led to increasing responsibility within the Department, ultimate to serving on the executive protection units for Govt. Fob James and Don Siegel man, as well as Steve Windom, when he served as Lieutenant Governor.</p>
-            <p class="team__bio-content">When Steve created his lobbying firm, Andre was one of the first hires. When he’s not working, Andre can be found fishing. His married to Patricia Reid and is the father of James, Antoinette, Andre Jr., and Allen, and his grandfather to Lauren and Chelsie.</p>
+            <div class="team__member--mobile"><img src="assets/img/team-andreReid.jpg" class="team__member-image--mobile">
+              <p class="team__member-name--mobile">Andre Reid</p>
+              <p class="team__member-title--mobile">Associate</p>
+            </div>
+            <div class="team__bio-content__wrapper">
+              <p class="team__bio-content">After a 27-year career in law enforcement, Andre Reid has spent the last 11 years helping clients navigate the legislative and regulatory processes. Andre was one of the first African-American troopers in the state, and gained the trust of decision makers with his services as an investigator, executive security officer and legislative liaison for the Department of Public Safety.</p>
+              <p class="team__bio-content">A graduate of McGill-Toolen High School who also attended Bishop State College, Andre served in the U.S. Air Force and Air Force Reserves following his education. His work as an undercover agent led to increasing responsibility within the Department, ultimately to serving on the executive protection units for Govs. Fob James and Don Siegelman, as well as Steve Windom, when he served as Lieutenant Governor.</p>
+              <p class="team__bio-content">When Steve created his lobbying firm, Andre was one of the first hires. When he's not working, Andre can be found fishing. He is married to Patricia Reid and is the father of James, Antoinette, Andre Jr., and Allen, and is grandfather to Lauren and Chelsie.</p>
+            </div>
           </div>
           <div id="sharonBio" class="team__bio">
-            <p class="team__bio-content">The heart and soul of the team of Windom, Galliher & Associates is Sharon Gaston. Her affiliation with Steve Windom began in 1999 when she left her position at the Alabama Department of Conservation and Natural Resources to become Steve’s executive assistant/office manager when he was Lieutenant Governor. When Steve launched the firm, it didn’t take long for him to realize that he needed Sharon on the team to make sure the trains ran on time and, more importantly, where they were supposed to go.</p>
-            <p class="team__bio-content">Sharon spent 23 years on the staff of the Department of Conservation and Natural Resources, serving as the executive assistant for four different commissioners. She worked in the State Lands Division before moving to the Commissioner’s Office.</p>
-            <p class="team__bio-content">A native of Eclectic and a graduate of Eclectic Academy, she is married to Johnny Gaston, and has two children — a son, Jake, and a daughter, Ashlyn. In her rarely found spare time, she can be found at a lake, river or beach.</p>
+            <div class="team__member--mobile"><img src="assets/img/team-sharonGaston.jpg" class="team__member-image--mobile">
+              <p class="team__member-name--mobile">Sharon Gaston</p>
+              <p class="team__member-title--mobile">Office Manager</p>
+            </div>
+            <div class="team__bio-content__wrapper">
+              <p class="team__bio-content">The heart and soul of the team of Windom, Galliher & Associates is Sharon Gaston. Her affiliation with Steve Windom began in 1999 when she left her position at the Alabama Department of Conservation and Natural Resources to become Steve’s executive assistant/office manager when he was Lieutenant Governor. When Steve launched the firm, it didn’t take long for him to realize that he needed Sharon on the team to make sure the trains ran on time and, more importantly, where they were supposed to go.</p>
+              <p class="team__bio-content">Sharon spent 23 years on the staff of the Department of Conservation and Natural Resources, serving as the executive assistant for four different commissioners. She worked in the State Lands Division before moving to the Commissioner’s Office.</p>
+              <p class="team__bio-content">A native of Eclectic and a graduate of Eclectic Academy, she is married to Johnny Gaston, and has two children — a son, Jake, and a daughter, Ashlyn. In her rarely found spare time, she can be found at a lake, river or beach.</p>
+            </div>
           </div>
         </section>
         <section id="newsletter" class="newsletter">
@@ -169,7 +197,7 @@
               <h4 class="newsletter__item--issue">Issue No. 38</h4>
               <hr class="newsletter__item--divider">
               <h3 class="newsletter__item--title">Medicaid, minimum wage take center stage </h3>
-              <p class="newsletter__item--date">FEBRUARY 26, 2016</p></a></div><a href="newsletters.html" target="_blank" class="newsletter__view-more">VIEW MORE...</a>
+              <p class="newsletter__item--date">FEBRUARY 26, 2016</p></a></div><a href="newsletters.html" target="_blank" class="newsletter__view-more">View More...</a>
         </section>
         <section id="links" class="links">
           <h2 class="links__title">RELATED LINKS</h2>
@@ -205,11 +233,11 @@
             </div>
             <div class="footer__wrapper-address">
               <h3 class="footer__heading">OFFICE ADDRESS:</h3>
-              <p class="footer__content">770 Washington Avenue Suite 500 <br /> Montgomery, Alabama 36104</p>
+              <p class="footer__content">770 Washington Avenue Suite 500 <br /> Montgomery, Alabama 36102</p>
               <h3 class="footer__heading">MAILING ADDRESS:</h3>
               <p class="footer__content">Post Office Box 1949 <br /> Montgomery, Alabama 36104</p>
               <h3 class="footer__heading">CONTACT US:</h3>
-              <p class="footer__content">Phone: 334-241-0078 <br /> Fax: 334-241-0078</p>
+              <p class="footer__content">Phone: 334-241-0078 <br /> Fax: 866-362-1942</p>
             </div>
             <div class="footer__wrapper-miniNav">
               <ul class="footer__miniNav">

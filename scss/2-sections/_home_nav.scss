@@ -12,7 +12,7 @@ nav {
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   position: absolute;
   width: 90%;
   height: 100%;
@@ -22,6 +22,7 @@ nav {
   margin: 0;
 
   &__title {
+    opacity: 0;
     flex-grow: 1;
     margin: 0;
     @include font-smoothing;
@@ -47,7 +48,7 @@ nav {
     padding: 0 1em;
     margin: 0;
     @include font-smoothing;
-    font-family: $display-font;
+    font-family: $display;
     font-size: 20px;
     font-weight: 400;
     transition: all .2s ease-out;
@@ -91,7 +92,7 @@ nav {
       margin: 0;
       @include font-smoothing;
       display: inline;
-      font-family: $display-font;
+      font-family: $display;
       font-weight: 700;
       letter-spacing: .75px;
       font-size: em(30);
