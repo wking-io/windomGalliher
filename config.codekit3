@@ -1056,6 +1056,14 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/jadefiles\/newsletters.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/newsletters.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/jadefiles\/partials\/about.jade": {
 		"cOD": 1,
 		"ft": 512,
@@ -1109,6 +1117,14 @@
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/jadefiles\/map.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/jadefiles\/partials\/nav-newsletters.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/jadefiles\/nav-newsletters.html",
 		"oF": 0,
 		"oS": 0
 		},
