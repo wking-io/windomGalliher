@@ -7,9 +7,9 @@ $(document).ready(function($){
       anchorLinks     = $('#links').offset().top - 1,
       anchorContact     = $('#contact').offset().top - 1;
 
+
   //nav background change on scroll
    $(window).scroll(function() {
-    //underline on current page
     if ($(document).scrollTop() >= anchorPurpose && $(document).scrollTop() < anchorAbout) {
       $("#border-purpose").css('border-bottom', '3px solid #FFFFFF');
       $("#border-about, #border-team, #border-links, #border-newsletter, #border-contact").css('border-bottom', 'none');

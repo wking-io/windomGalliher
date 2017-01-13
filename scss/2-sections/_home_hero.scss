@@ -137,6 +137,26 @@
     }
   }
 }
+
+@media (max-width: 875px) {
+  .hero {
+    &__content br {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .hero {
+    &__cta {
+      display: inline-block;
+      width: 100%;
+      margin: 0 auto 20px;
+      text-align: center;
+    }
+  }
+}
+
 @media (max-width: $S) {
   .hero {
     width: 100vw;

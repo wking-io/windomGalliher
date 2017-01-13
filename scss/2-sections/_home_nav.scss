@@ -20,6 +20,9 @@ nav {
   transform: translateX(-50%);
   padding: 0;
   margin: 0;
+  &-newsletters {
+    justify-content: flex-start;
+  }
 
   &__title {
     opacity: 0;
@@ -100,7 +103,7 @@ nav {
     }
     & ul li a {
       margin: 0;
-      padding: 5rem 0;
+      padding: 2rem 0;
       display: block;
       color: $text-color-dark;
       text-decoration: none;
@@ -119,20 +122,20 @@ nav {
     display: none;
   }
   &__icon {
-    width: 20px;
+    width: 28px;
     height: 15px;
     position: relative;
     margin: auto;
     top: 8px;
     transition: .5s ease-out;
     cursor: pointer;
-    display: none;
+    display: block;
     & span {
       display: block;
       position: absolute;
       height: 3px;
       width: 100%;
-      background: $accent-color;
+      background: #ffffff;
       border-radius: 5px;
       opacity: 1;
       left: 0;
@@ -143,11 +146,14 @@ nav {
         top: 0;
       }
       &:nth-child(2), &:nth-child(3) {
-        top: 6px;
+        top: 8px;
       }
       &:nth-child(4) {
-        top: 12px;
+        top: 16px;
       }
+    }
+    &.open span {
+      background: $accent-color;
     }
     &.open span:nth-child(1) {
       top: 18px;
@@ -178,7 +184,7 @@ nav {
     &__links {
       display: none;
     }
-    &__icon {
+    &__icon-click {
       display: block;
     }
   }
