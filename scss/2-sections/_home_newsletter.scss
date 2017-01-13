@@ -63,3 +63,19 @@
     }
   }
 }
+
+@media (max-width: 960px) {
+  .newsletter {
+    &__item {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .newsletter {
+    &__item {
+      width: 100%;
+    }
+  }
+}

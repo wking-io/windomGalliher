@@ -42,3 +42,19 @@
     }
   }
 }
+
+@media (max-width: $M) {
+  .links {
+    &__link {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .links {
+    &__link {
+      width: 100%;
+    }
+  }
+}

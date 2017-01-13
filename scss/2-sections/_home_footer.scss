@@ -11,16 +11,15 @@
     max-width: 1150px;
     margin: 0 auto;
     &-title {
-      width: 25%;
+      width: 50%;
     }
     &-address {
-      width: 25%;
-    }
-    &-miniNav {
-      width: 25%;
+      width: 50%;
     }
     &-newsletterSignup {
-      width: 25%;
+      width: 90%;
+      padding: 20px 20px 0 0;
+      max-width: 450px
     }
   }
   &__title {
@@ -43,32 +42,12 @@
     opacity: 0.65;
     margin: 0 0 20px 0
   }
-  &__miniNav {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    & li {
-      margin: 15px 0;
-      &:first-child {
-        margin-top: 0;
-      }
-    }
-    & li a {
-      font: 500 16px $sans-font;
-      text-decoration: none;
-      color: $text-color-light;
-      opacity: 0.65;
-      text-transform: uppercase;
-      &:hover {
-        opacity: 1;
-      }
-    }
-  }
+
   &__newsletter-title {
     color: $text-color-light;
     font: 400 18px $display;
     margin: 0 0 5px 0;
-    text-align: center;
+    text-align: left;
   }
   &__form-error {
     padding: 16px 0;
@@ -108,5 +87,35 @@ input[type=submit] {
   outline: none;
   &:hover {
     background: $primary-dark;
+  }
+}
+
+@media (max-width: 650px) {
+  .footer {
+    width: 100vw;
+    background-color: $bg-color-dark;
+    padding: 56px 0;
+
+    &__wrapper {
+      align-items: center;
+      justify-content: center;
+      &-title {
+        width: 100%;
+        text-align: center;
+      }
+      &-address {
+        width: 100%;
+        text-align: center;
+      }
+      &-newsletterSignup {
+        width: 100%;
+        padding: 20px 0 40px 0;
+        margin: 0 auto;
+        max-width: 450px
+      }
+    }
+    &__newsletter-title {
+      text-align: center;
+    }
   }
 }

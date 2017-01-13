@@ -1056,6 +1056,12 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/jadefiles\/nav-newsletters.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/jadefiles\/nav-newsletters.html",
+		"oF": 0
+		},
 	"\/jadefiles\/newsletters.jade": {
 		"cOD": 1,
 		"ft": 512,
@@ -1205,6 +1211,15 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/js\/newsletter.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/newsletter.min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/js\/smoothScroll.js": {
 		"ft": 64,
 		"mi": 1,
@@ -1222,6 +1237,12 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"\/newsletters.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/newsletters.html",
+		"oF": 0
 		},
 	"\/node_modules": {
 		"ft": 65536,
