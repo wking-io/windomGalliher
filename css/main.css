@@ -424,7 +424,7 @@ nav {
     transition: all .5s ease-out; }
     .nav__title a {
       text-decoration: none;
-      color: #fff; }
+      color: #1E242B; }
   .nav__links {
     margin: 0;
     padding: 0;
@@ -448,7 +448,7 @@ nav {
       margin-right: -1em; }
   .nav__links li a {
     margin: 0;
-    color: #fff;
+    color: #1E242B;
     text-decoration: none;
     -webkit-transition: all .5s ease-out;
     transition: all .5s ease-out;
@@ -529,7 +529,7 @@ nav {
       .nav__icon span:nth-child(2), .nav__icon span:nth-child(3) {
         top: 8px; }
       .nav__icon span:nth-child(4) {
-        top: 16px; }
+        top: 22px; }
     .nav__icon.open span {
       background: #1E242B; }
     .nav__icon.open span:nth-child(1) {
@@ -578,8 +578,8 @@ nav {
   top: 0; }
   .hero:after {
     /* add the transparent pattern overlay */
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(http://s14.directupload.net/images/111129/44ga9qid.png) center repeat;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(http://s14.directupload.net/images/111129/44ga9qid.png) center repeat;
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5)), url(http://s14.directupload.net/images/111129/44ga9qid.png) center repeat;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5)), url(http://s14.directupload.net/images/111129/44ga9qid.png) center repeat;
     content: "";
     position: absolute;
     bottom: 0;
@@ -603,14 +603,14 @@ nav {
     font-size: 1.75em;
     font-weight: normal;
     text-align: center;
-    color: #fff;
+    color: #1E242B;
     margin: 0; }
   .hero__content {
     font-family: "Oswald", "Roboto", sans-serif;
     font-weight: 400;
     text-align: center;
     font-size: 3em;
-    color: #fff;
+    color: #1E242B;
     margin: 20px 0 30px 0; }
     .hero__content--secondary {
       margin-bottom: 1em; }
@@ -635,10 +635,12 @@ nav {
       border: 2px solid #C2273C; }
     .hero__cta--ghost {
       background: transparent;
-      border: 2px solid #fff; }
+      border: 2px solid #1E242B;
+      color: #1E242B; }
       .hero__cta--ghost:hover {
-        background: rgba(255, 255, 255, 0.3);
-        border: 2px solid rgba(255, 255, 255, 0.3); }
+        background: #1E242B;
+        color: #fff;
+        border: 2px solid #1E242B; }
     .hero__cta--secondary {
       display: inline;
       background: rgba(255, 255, 255, 0.3);
@@ -666,8 +668,8 @@ nav {
   .hero {
     width: 100vw;
     height: 100vh;
-    background: -webkit-linear-gradient(rgba(30, 36, 43, 0.3), rgba(30, 36, 43, 0.5)), url(../assets/img/hero@2x.jpg);
-    background: linear-gradient(rgba(30, 36, 43, 0.3), rgba(30, 36, 43, 0.5)), url(../assets/img/hero@2x.jpg);
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5)), url(../assets/img/hero@2x.jpg);
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5)), url(../assets/img/hero@2x.jpg);
     background-size: cover;
     background-position: center;
     position: fixed;

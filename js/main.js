@@ -49,8 +49,8 @@ $(document).ready(function($){
     } else {
       $("#border-about, #border-purpose, #border-team, #border-newsletter, #border-links #border-contact").css('border-bottom', 'none');
       $("#nav-bar").css('background', 'transparent');
-      $(".nav__title-text, #nav-about, #nav-purpose, #nav-team, #nav-links, #nav-newsletter, #nav-contact").css('color', '#FFFFFF');
-      $(".nav__icon span").css('background', '#ffffff');
+      $(".nav__title-text, #nav-about, #nav-purpose, #nav-team, #nav-links, #nav-newsletter, #nav-contact").css('color', '#1E242B');
+      $(".nav__icon span").css('background', '#1E242B');
     }
     //end underline
   });

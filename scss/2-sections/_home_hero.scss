@@ -10,7 +10,7 @@
 
   &:after { /* add the transparent pattern overlay */
 
-    background: linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0, 0.3)), url(http://s14.directupload.net/images/111129/44ga9qid.png) center repeat;
+    background: linear-gradient(rgba(255,255,255, 0.4), rgba(255,255,255, 0.5)), url(http://s14.directupload.net/images/111129/44ga9qid.png) center repeat;
     content: "";
     position: absolute;
     bottom: 0;
@@ -36,7 +36,7 @@
     font-size: 1.75em;
     font-weight: normal;
     text-align: center;
-    color: $text-color-light;
+    color: $text-color-dark;
     margin: 0;
   }
   &__content {
@@ -44,7 +44,7 @@
     font-weight: 400;
     text-align: center;
     font-size: 3em;
-    color: #fff;
+    color: $text-color-dark;
     margin: 20px 0 30px 0;
 
     &--secondary {
@@ -75,10 +75,12 @@
     &--ghost {
       @extend .hero__cta;
       background: transparent;
-      border: 2px solid #fff;
+      border: 2px solid $text-color-dark;
+      color: $text-color-dark;
       &:hover {
-        background: rgba(255, 255, 255, 0.3);
-        border: 2px solid rgba(255, 255, 255, 0.3);
+        background: $text-color-dark;
+        color: $text-color-light;
+        border: 2px solid $text-color-dark;
       }
     }
 
@@ -116,7 +118,7 @@
   .hero {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(rgba(30,36,43, 0.3), rgba(30,36,43, 0.5)), url(../assets/img/hero@2x.jpg);
+    background: linear-gradient(rgba(255,255,255, 0.4), rgba(255,255,255, 0.5)), url(../assets/img/hero@2x.jpg);
     background-size: cover;
     background-position: center;
     position: fixed;
